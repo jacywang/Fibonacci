@@ -12,8 +12,13 @@ int main(int argc, const char * argv[]) {
     int n;
     printf("Enter nth:");
     scanf("%d", &n);
-    
-    if (n > 2) {
+
+    if (n ==1) {
+        printf("The first Fibonacci number is 0\n");
+    } else if (n==2) {
+        printf("The first Fibonacci number is 1\n");
+        
+    } else {
         int firstNumber = 0;
         int secondNumber = 1;
         int newNumber =0;
@@ -27,12 +32,5 @@ int main(int argc, const char * argv[]) {
         }
         
         printf("The %d th Fibonacci number is %d\n", n, newNumber);
-    } else if (n ==1) {
-        printf("The first Fibonacci number is 0\n");
-    } else if (n==2) {
-        printf("The first Fibonacci number is 1\n");
-
     }
-    
-    return 0;
 }
